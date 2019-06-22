@@ -1,6 +1,6 @@
 var Monopoly = {};
 Monopoly.allowRoll = true;
-Monopoly.moneyAtStart = 1;
+Monopoly.moneyAtStart = 400;
 Monopoly.isDouble = false;
 
 //calls various functions for the init
@@ -360,7 +360,7 @@ Monopoly.getNextCell = function (cell) {
 
 Monopoly.handlePassedGo = function () {
     var player = Monopoly.getCurrentPlayer();
-    Monopoly.updatePlayersMoney(player, 100/*Monopoly.moneyAtStart/-10*/);
+    Monopoly.updatePlayersMoney(player, Monopoly.moneyAtStart/-10);
 };
 
 
